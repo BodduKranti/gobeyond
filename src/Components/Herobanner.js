@@ -42,10 +42,18 @@ const Herobanner = () => {
                     <polygon className="grid-1-1 big-section" points="0,0.5 780,0.5 780,855"
                         stroke="#ff8a00" fill='' >
                     </polygon>
-                    <polygon className="grid-1-1 mid-section postion-relative" points="781,0.5 980,0.5 980,200"
+                    <defs>
+                        <pattern id="image2" x="0%" y="0%" height="100%" width="100%" viewBox="-910 -230 155 2000">
+                            <image x="-5%" y="0%" width="80" height="150" xlinkHref="images/group-1.svg">
+                            </image>
+                        </pattern>
+                    </defs>
+                    <polygon id="mid-section1" className="grid-1-1 mid-section postion-relative" points="781,0.5 980,0.5 980,200"
                         stroke="#ff8a00" fill='' >
                     </polygon>
-                    <polygon className="grid-1-1 mid-section postion-relative mt-4" points="781,200 980,200 980,400"
+                    <use xlinkHref="mid-section1" />
+                    <use xlinkHref="mid-section1" fill="url(#image2)" />
+                    <polygon id="mid-section2" className="grid-1-1 mid-section postion-relative mt-4" points="781,200 980,200 980,400"
                         stroke="#ff8a00" fill='' >
                     </polygon>
                     <polygon className="grid-1-1 big-section mt-4" points="981,0.5 1366,0.5 1366,400"
