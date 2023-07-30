@@ -1648,9 +1648,11 @@ p {
 }
 .home-hero-section svg polygon:hover {
     fill: var(--polygonHover);
-    fill-opacity: 0.1;
+    /* fill-opacity: 0.1; */
 }
-
+svg:has(.big-section):hover ~ .container .d-flex h1 {
+    mix-blend-mode: difference;
+}
 /* .home-hero-section svg polygon {
     fill: var(--whiteColor);
 } */

@@ -49,8 +49,8 @@ const Herobanner = () => {
 
                     <use xlinkHref='#midsectionFirst' fill="url(#star)" />
                     <use xlinkHref='#midsectionSec' fill="url(#star)" />
-                    <use xlinkHref='#leftsectionThird' fill="url(#star)" />
-                    <use xlinkHref='#leftsectionfourth' fill="url(#star)" />
+                    <use xlinkHref='#leftsectionThird' fill="url(#star2)" />
+                    <use xlinkHref='#leftsectionfourth' fill="url(#star3)" />
 
                     <polygon id="midsectionFirst" className="grid-1-1 mid-section postion-relative" points="781,0.5 980,0.5 980,200"
                         stroke="#ff8a00">
@@ -76,7 +76,37 @@ const Herobanner = () => {
                         fill="#EA262A" >
                     </polygon> */}
                     <defs>
-                        <pattern id="star" viewBox="-165,-44,14,509" width="100%" height="100%">
+                        <pattern id="star" viewBox="-265,-44,14,749" width="100%" height="100%">
+                            <svg width="50" height="101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="40.4675" cy="92.3615" rx="8.86453" ry="7.98518" transform="rotate(180 40.4675 92.3615)" fill="#FF7A00" />
+                                <ellipse cx="40.4675" cy="36.2199" rx="8.86453" ry="7.98519" transform="rotate(180 40.4675 36.2199)" fill="#FF7A00" />
+                                <ellipse cx="9.07297" cy="92.3615" rx="8.86453" ry="7.98518" transform="rotate(180 9.07297 92.3615)" fill="#FF7A00" />
+                                <ellipse cx="9.07297" cy="36.2199" rx="8.86453" ry="7.98519" transform="rotate(180 9.07297 36.2199)" fill="#FF7A00" />
+                                <ellipse cx="40.4675" cy="64.2902" rx="8.86453" ry="7.98518" transform="rotate(180 40.4675 64.2902)" fill="#FF7A00" />
+                                <ellipse cx="40.4675" cy="8.1486" rx="8.86453" ry="7.98519" transform="rotate(180 40.4675 8.1486)" fill="#FF7A00" />
+                                <ellipse cx="9.07297" cy="64.2902" rx="8.86453" ry="7.98518" transform="rotate(180 9.07297 64.2902)" fill="#FF7A00" />
+                                <ellipse cx="9.07297" cy="8.1486" rx="8.86453" ry="7.98519" transform="rotate(180 9.07297 8.1486)" fill="#FF7A00" />
+                            </svg>
+                        </pattern>
+                    </defs>
+
+                    <defs>
+                        <pattern id="star2" viewBox="-583,-40,14,1394" width="100%" height="100%">
+                            <svg width="50" height="101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="40.4675" cy="92.3615" rx="8.86453" ry="7.98518" transform="rotate(180 40.4675 92.3615)" fill="#FF7A00" />
+                                <ellipse cx="40.4675" cy="36.2199" rx="8.86453" ry="7.98519" transform="rotate(180 40.4675 36.2199)" fill="#FF7A00" />
+                                <ellipse cx="9.07297" cy="92.3615" rx="8.86453" ry="7.98518" transform="rotate(180 9.07297 92.3615)" fill="#FF7A00" />
+                                <ellipse cx="9.07297" cy="36.2199" rx="8.86453" ry="7.98519" transform="rotate(180 9.07297 36.2199)" fill="#FF7A00" />
+                                <ellipse cx="40.4675" cy="64.2902" rx="8.86453" ry="7.98518" transform="rotate(180 40.4675 64.2902)" fill="#FF7A00" />
+                                <ellipse cx="40.4675" cy="8.1486" rx="8.86453" ry="7.98519" transform="rotate(180 40.4675 8.1486)" fill="#FF7A00" />
+                                <ellipse cx="9.07297" cy="64.2902" rx="8.86453" ry="7.98518" transform="rotate(180 9.07297 64.2902)" fill="#FF7A00" />
+                                <ellipse cx="9.07297" cy="8.1486" rx="8.86453" ry="7.98519" transform="rotate(180 9.07297 8.1486)" fill="#FF7A00" />
+                            </svg>
+                        </pattern>
+                    </defs>
+
+                    <defs>
+                        <pattern id="star3" viewBox="-781,-40,89,1297" width="100%" height="100%">
                             <svg width="50" height="101" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <ellipse cx="40.4675" cy="92.3615" rx="8.86453" ry="7.98518" transform="rotate(180 40.4675 92.3615)" fill="#FF7A00" />
                                 <ellipse cx="40.4675" cy="36.2199" rx="8.86453" ry="7.98519" transform="rotate(180 40.4675 36.2199)" fill="#FF7A00" />
