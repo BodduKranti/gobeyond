@@ -1,0 +1,26 @@
+.triangle {
+    width: 0;
+    height: 0;
+}
+.triangle .triangle-left {
+    border-top: 50px solid transparent;
+    border-right: 100px solid #32557f;
+    border-bottom: 50px solid transparent;
+}
+.triangle .triangle-top-right {
+    border-top: 430px solid #32557f17;
+    border-left: 430px solid transparent;
+    border-bottom: 430px solid transparent;
+    border-right: 430px solid transparent;
+    mix-blend-mode: screen;
+}
+.triangle .triangle-top-right:hover {
+    border-top: 430px solid #32557f;
+}
+.main-section {
+    position: relative;
+}
+.triangle:hover ~ h2 {
+    mix-blend-mode: difference;
+    color: #ffffff;
+}

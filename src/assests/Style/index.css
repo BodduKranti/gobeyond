@@ -1,6 +1,8 @@
 @import url("animation.css");
 @import url("home-banner.css");
+@import url("rotatetext.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap");
 :root {
     /* Break Points*/
     --bs-breakpoint-xs: 0;
@@ -22,6 +24,10 @@
     --blackColor: #000000;
     --graykColor: #d1d1d1;
     --polygonHover: #ff8a00;
+    --polygonHoveroPacity: #ff880025;
+    --grayTextcolor: #5f5f5f;
+    --skyBluecolor: #95a3ee;
+    --inputBordercolor: #dedede;
 
     /* Font Family */
     --heading: "Roboto", sans-serif;
@@ -44,6 +50,9 @@
 }
 .bg-purple {
     background-color: var(--purpleColor);
+}
+.bg-skyblue {
+    background-color: var(--skyBluecolor);
 }
 
 /* ----- Text Color ------ */
@@ -71,6 +80,9 @@
 .text-polygon {
     color: var(--polygonHover);
 }
+.text-grayTextcolor {
+    color: var(--grayTextcolor);
+}
 ::selection {
     background: #ff8a00;
     text-shadow: none;
@@ -95,7 +107,9 @@ h5,
 h6 {
     font-family: var(--heading);
 }
-
+p {
+    line-height: 1.6;
+}
 .d-flex {
     display: flex;
 }
@@ -1634,10 +1648,12 @@ h6 {
 }
 .home-hero-section svg polygon:hover {
     fill: var(--polygonHover);
+    fill-opacity: 0.1;
 }
-.home-hero-section svg polygon {
+
+/* .home-hero-section svg polygon {
     fill: var(--whiteColor);
-}
+} */
 .home-hero-section .hero-red-fill {
     width: 0;
     height: 0;
@@ -3596,7 +3612,7 @@ header .hamburger-left .hamburger-lines.active .line3 {
     width: calc(100% - 300px);
     left: -100%;
     position: fixed;
-    background-color: #000000;
+    background-color: #dddddd;
     z-index: 2;
     height: 100%;
     transition: all 0.5s ease-in-out;
@@ -3610,7 +3626,37 @@ header .hamburger-left .hamburger-lines.active .line3 {
 .opacity-1 {
     opacity: 1;
 }
+.none {
+    display: none;
+}
+.block {
+    display: block;
+}
 /* ======== Home SEction ============== */
+
+/* Form section css */
+.form-group {
+    width: 100%;
+    float: left;
+}
+.form-control {
+    border: 1px solid var(--inputBordercolor);
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 8px;
+}
+.resize-none {
+    resize: none;
+}
+.btn-black {
+    padding: 10px 25px;
+    color: var(--whiteColor);
+    font-size: 16px;
+    background-color: var(--blackColor);
+    border-radius: 8px;
+}
+/* End Form section css*/
+
 .service:nth-child(even) .row {
     flex-direction: row-reverse;
 }
@@ -3620,6 +3666,46 @@ header .hamburger-left .hamburger-lines.active .line3 {
 video.w-100 {
     margin-bottom: -10px;
 }
+
+/* ------ Our Clients -------- */
+.slick-slider {
+    overflow: hidden;
+}
+/* ------ end Our Clients ---- */
+
+/* ------ Location Tabs ------- */
+.mainTabs .tabsBtns {
+    border: 1px solid #000000;
+    padding: 10px 26px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+}
+.mainTabs .tabsBtns::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    border-right: 1px solid var(--blackColor);
+    height: calc(100% - 12px);
+    top: 6px;
+}
+.mainTabs .tabsBtns:last-child::after {
+    border-right: 0;
+}
+.mainTabs .tabsBtns:not(:first-child) {
+    border-left: none;
+}
+.mainTabs .tabsBtns:not(:last-child) {
+    border-right: none;
+}
+.mainTabs .tabsBtns.tabActive,
+.mainTabs .tabsBtns:hover {
+    background-color: var(--polygonHover);
+    color: var(--whiteColor);
+    border-color: var(--polygonHover);
+}
+/* ---- end Location Tabs ----- */
 
 @media (max-width: 767px) {
     .service .row .col-md-6 {

@@ -1,6 +1,5 @@
 import React from 'react'
 import { sectionContent } from '../Data/Homesection';
-
 const Section = () => {
     return (
         <>
