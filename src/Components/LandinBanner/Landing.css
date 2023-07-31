@@ -1,26 +1,204 @@
-.triangle {
-    width: 0;
-    height: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap");
+
+.main-section .heading {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-100%);
 }
-.triangle .triangle-left {
-    border-top: 50px solid transparent;
-    border-right: 100px solid #32557f;
-    border-bottom: 50px solid transparent;
+.heading {
+    position: relative;
+    z-index: 999;
+    color: #ff8a00;
+    font-size: 120px;
+    font-family: "Roboto", sans-serif;
+    display: inline;
 }
-.triangle .triangle-top-right {
-    border-top: 430px solid #32557f17;
-    border-left: 430px solid transparent;
-    border-bottom: 430px solid transparent;
-    border-right: 430px solid transparent;
-    mix-blend-mode: screen;
+.heading:after {
+    content: "";
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    bottom: 4px;
+    background-color: #ff8a00;
+    right: 20%;
 }
-.triangle .triangle-top-right:hover {
-    border-top: 430px solid #32557f;
+
+/* ---- circle dots ---- */
+.main-section > .eightDots {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 36px;
 }
-.main-section {
+.main-section > .eightDots i svg {
+    font-size: 22px;
+}
+.main-section > .eightDots i {
+    width: 18px;
+    height: 17px;
+}
+.upper-polygon-left #mid-polygon-shape1,
+.upper-polygon-left #mid-polygon-shape2,
+#bottom-polygonshape,
+.upper-right-polygon #right-polygon-shape {
     position: relative;
 }
-.triangle:hover ~ h2 {
-    mix-blend-mode: difference;
+.upper-polygon-left #mid-polygon-shape1:hover .eightDots i svg,
+.upper-polygon-left #mid-polygon-shape2:hover .eightDots i svg,
+#bottom-polygonshape:hover .eightDots i svg,
+.upper-right-polygon #right-polygon-shape:hover .eightDots i svg {
     color: #ffffff;
+}
+.upper-polygon-left #mid-polygon-shape1 .eightDots,
+.upper-polygon-left #mid-polygon-shape2 .eightDots {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    width: 20px;
+}
+
+.upper-polygon-left #mid-polygon-shape1 .eightDots i svg,
+.upper-polygon-left #mid-polygon-shape2 .eightDots i svg {
+    font-size: 6px;
+}
+
+.upper-polygon-left #mid-polygon-shape1 .eightDots i,
+.upper-polygon-left #mid-polygon-shape2 .eightDots i {
+    width: 7px;
+    height: 6px;
+}
+.upper-right-polygon #right-polygon-shape .eightDots {
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    width: 22px;
+}
+
+.upper-right-polygon #right-polygon-shape .eightDots i {
+    width: 9px;
+    height: 8px;
+    font-size: 9px;
+}
+#bottom-polygonshape .eightDots {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#bottom-polygonshape .eightDots i {
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+}
+/* --- polygon shape hover heading change ------ */
+.polygon-shape:has(#left-polygon:hover) ~ .heading {
+    mix-blend-mode: difference;
+}
+/* 
+.polygon-shape:has(.upper-polygon-left #mid-polygon-shape1:hover) ~ .heading,
+.polygon-shape:has(.upper-polygon-left #mid-polygon-shape2:hover) ~ .heading,
+.polygon-shape:has(.upper-right-polygon #right-polygon-shape:hover) ~ .heading,
+.polygon-shape:has(#bottom-polygonshape:hover) ~ .heading */
+/* -------- polygon shapes ----------- */
+#left-polygon {
+    height: 100vh;
+    clip-path: polygon(100% 0%, 100% 69%, 100% 100%, 0% 0px);
+    background-color: #f38211;
+    float: left;
+    position: relative;
+    width: 55%;
+}
+.hover-polygoninside {
+    clip-path: polygon(100% 0%, 100% 69%, 100% 100%, 0% 0px);
+    background-color: #ffffff;
+    float: left;
+    position: absolute;
+    left: 2px;
+    right: 1px;
+    top: 1px;
+    bottom: 2px;
+}
+#left-polygon:hover .hover-polygoninside {
+    background-color: #f38211;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.mid-bottom-polygon {
+    width: 45%;
+    float: left;
+    position: relative;
+    height: 100vh;
+}
+/* ---- upper-polygon --- */
+.upper-polygon {
+    width: 100%;
+    height: calc(100vh - 45vh);
+}
+.upper-polygon-left {
+    width: 30%;
+    float: left;
+    height: calc(100vh - 45vh);
+}
+.upper-polygon-left #mid-polygon-shape1 {
+    height: calc(55vh / 2);
+    clip-path: polygon(100% 0%, 100% 69%, 100% 100%, 0% 0px);
+    background-color: #f38211;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.upper-polygon-left #mid-polygon-shape2 {
+    height: calc(55vh / 2);
+    clip-path: polygon(100% 0%, 100% 69%, 100% 100%, 0% 0px);
+    background-color: #f38211;
+    float: left;
+    width: 100%;
+    position: relative;
+    mix-blend-mode: screen;
+}
+.upper-polygon-left #mid-polygon-shape1 .hover-polygoninside,
+.upper-polygon-left #mid-polygon-shape2 .hover-polygoninside {
+    left: 2px;
+}
+.upper-polygon-left #mid-polygon-shape1:hover .hover-polygoninside,
+.upper-polygon-left #mid-polygon-shape2:hover .hover-polygoninside,
+#bottom-polygonshape:hover .hover-polygoninside,
+.upper-right-polygon #right-polygon-shape:hover .hover-polygoninside {
+    background-color: #f38211;
+}
+.upper-right-polygon {
+    width: 70%;
+    float: left;
+    height: calc(100vh - 45vh);
+    mix-blend-mode: screen;
+}
+.upper-right-polygon #right-polygon-shape {
+    height: 55vh;
+    clip-path: polygon(100% 0%, 100% 69%, 100% 100%, 0% 0px);
+    background-color: #f38211;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+/* ----- bottom-polygon ---- */
+.bottom-polygon {
+    width: 100%;
+    height: 45vh;
+    float: left;
+}
+#bottom-polygonshape {
+    height: 45vh;
+    clip-path: polygon(100% 0%, 100% 69%, 100% 100%, 0% 0px);
+    background-color: #f38211;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+#bottom-polygonshape .hover-polygoninside {
+    left: 4px;
+    bottom: 2px;
 }
