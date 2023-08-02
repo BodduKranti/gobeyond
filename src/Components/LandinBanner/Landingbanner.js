@@ -5,6 +5,11 @@ import { GoDotFill } from 'react-icons/go'
 const Landingbanner = () => {
     return (
         <>
+
+            {/* <div class="teaser">
+                <h3>blend-mode with pseudos</h3>
+                <p>Deleniti atque error quidem eaque eligendi ad, pariatur minima quisquam omnis veniam, sint voluptas, a ipsam illum debitis. Voluptatem esse, consectetur qui.</p>
+            </div> */}
             <div className='col-12 main-section'>
                 <div className='polygon-shape'>
                     <div id="left-polygon">

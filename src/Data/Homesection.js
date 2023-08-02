@@ -7,7 +7,15 @@ export const sectionContent = [
         link: "/",
         btnName: "Know More",
         bgColor: 'bg-orange',
-        txtColor: 'text-orange'
+        txtColor: 'text-orange',
+        bgTrans: '',
+        imgTrans: [
+            {
+                letPoint: 50,
+                rightPoints: - 1
+            }
+        ],
+        textTrans: ''
     },
     {
         id: "mobile-app-developement",
@@ -17,7 +25,15 @@ export const sectionContent = [
         link: "/",
         btnName: "Know More",
         bgColor: 'bg-green',
-        txtColor: 'text-green'
+        txtColor: 'text-green',
+        bgTrans: '',
+        imgTrans: [
+            {
+                letPoint: 50,
+                rightPoints: - 1
+            }
+        ],
+        textTrans: ''
     },
     {
         id: "gamification",
@@ -27,7 +43,20 @@ export const sectionContent = [
         link: "/",
         btnName: "Know More",
         bgColor: 'bg-darkblue',
-        txtColor: 'text-darkblue'
+        txtColor: 'text-darkblue',
+        bgTrans: [
+            {
+                letPoint: 50,
+                rightPoints: - 1
+            }
+        ],
+        imgTrans: [
+            {
+                letPoint: 50,
+                rightPoints: - 1
+            }
+        ],
+        textTrans: ''
     },
     {
         id: "aws-azure",
@@ -37,7 +66,15 @@ export const sectionContent = [
         link: "/",
         btnName: "Know More",
         bgColor: 'bg-lightblue',
-        txtColor: 'text-lightblue'
+        txtColor: 'text-lightblue',
+        bgTrans: '',
+        imgTrans: [
+            {
+                letPoint: 50,
+                rightPoints: - 1
+            }
+        ],
+        textTrans: ''
     },
     {
         id: "devops",
@@ -47,7 +84,15 @@ export const sectionContent = [
         link: "/",
         btnName: "Learn More",
         bgColor: 'bg-bringle',
-        txtColor: 'text-bringle'
+        txtColor: 'text-bringle',
+        bgTrans: '',
+        imgTrans: [
+            {
+                letPoint: 50,
+                rightPoints: - 1
+            }
+        ],
+        textTrans: ''
     },
     {
         id: "cloud-services",
@@ -57,6 +102,14 @@ export const sectionContent = [
         link: "/",
         btnName: "Learn More",
         bgColor: 'bg-purple',
-        txtColor: 'text-purple'
+        txtColor: 'text-purple',
+        bgTrans: '',
+        imgTrans: [
+            {
+                letPoint: 50,
+                rightPoints: - 1
+            }
+        ],
+        textTrans: ''
     }
 ]

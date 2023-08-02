@@ -32,7 +32,10 @@
     /* Font Family */
     --heading: "Roboto", sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+    /* overflow-y: hidden; */
+}
 .bg-orange {
     background-color: var(--orangeColor) !important;
 }
@@ -3521,6 +3524,24 @@ h1.h-text:after {
         padding-left: 3rem !important;
     }
 }
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+.list-inline-item {
+    display: inline-block;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+.initialism {
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
 /* ---- Header -- */
 header {
     position: fixed;
@@ -3530,7 +3551,7 @@ header {
     /* background-color: #0000001e; */
     padding: 10px 20px;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 header button.hamburger span {
     width: 100%;
@@ -3596,7 +3617,10 @@ header .hamburger-left .hamburger-lines.active .line2 {
 header .hamburger-left .hamburger-lines.active .line3 {
     transform: rotate(-45deg);
 }
-
+header a > svg {
+    width: 45px;
+    height: 65px;
+}
 .rightSiderbar {
     width: 300px;
     position: fixed;
@@ -3605,7 +3629,7 @@ header .hamburger-left .hamburger-lines.active .line3 {
     height: 100%;
     background-color: var(--whiteColor);
     transition: all 0.5s ease-in-out;
-    z-index: 1;
+    z-index: 3;
 }
 .rightSiderbar.active {
     right: 0;
@@ -3615,7 +3639,7 @@ header .hamburger-left .hamburger-lines.active .line3 {
     left: -100%;
     position: fixed;
     background-color: #dddddd;
-    z-index: 2;
+    z-index: 3;
     height: 100%;
     transition: all 0.5s ease-in-out;
 }
@@ -3634,6 +3658,55 @@ header .hamburger-left .hamburger-lines.active .line3 {
 .block {
     display: block;
 }
+/* --- Vertical Links --- */
+.vertical-Links {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 99;
+    width: 95px;
+}
+.vertical-Links a {
+    position: relative;
+    list-style: none;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: block;
+}
+.vertical-Links a span {
+    display: block;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    padding-top: 5px;
+    font-size: 14px;
+}
+.vertical-Links a::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    opacity: 1;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.vertical-Links .current a {
+    margin-bottom: 15px;
+}
+.vertical-Links .current a span {
+    opacity: 1;
+}
+.vertical-Links .current a::before {
+    width: 60px;
+    height: 4px;
+}
+
 /* ======== Home SEction ============== */
 
 /* Form section css */
@@ -3667,6 +3740,7 @@ header .hamburger-left .hamburger-lines.active .line3 {
 }
 video.w-100 {
     margin-bottom: -10px;
+    /* height: 100%; */
 }
 
 /* ------ Our Clients -------- */

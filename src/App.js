@@ -2,9 +2,15 @@ import React from 'react'
 
 import './assests/Style/index.css'
 
-// npm install react-scrollchor --save
+// npm install react-scrollchor --save [react native]
+// npm i react-anchor-link-smooth-scroll
 // npm install react-slick --save
 // npm install slick-carousel
+// npm i react-scrollspy
+// npm i react-scroll-parallax
+
+
+import './assests/Style/style.scss'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,9 +30,9 @@ const App = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/landing' element={<Landing />} />
+                    <Route index element={<Landing />} />
                     <Route path='/' element={<Header />}>
-                        <Route index element={<Home />} />
+                        <Route path='/home' element={<Home />} />
                         <Route path='/about' element={<About />} />
                     </Route>
                 </Routes>

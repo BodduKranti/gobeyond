@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Homevideo = () => {
+const Homevideo = ({ pageName }) => {
     return (
         <>
-            <div className='col-12 homeVideo'>
+            <div className={`${pageName === 'homeVideo' ? 'active' : ''} col-12 homeVideo`} id={'homeVideo'}>
                 <video className="w-100" autoPlay loop muted>
                     <source
                         src="https://mdbootstrap.com/img/video/animation-intro.mp4"
