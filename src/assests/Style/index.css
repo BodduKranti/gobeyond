@@ -3741,6 +3741,12 @@ header a > svg {
 video.w-100 {
     margin-bottom: -10px;
     /* height: 100%; */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* ------ Our Clients -------- */

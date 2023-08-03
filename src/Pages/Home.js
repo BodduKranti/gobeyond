@@ -17,22 +17,18 @@ const Home = () => {
                 setPageName={setPageName}
             />
             <div className='homesection'>
-
-
                 <Homevideo
                     pageName={pageName}
                 />
-
                 <Section
                     pageName={pageName}
                 />
-
                 {/* <OurClients />
 
                 <OurTeam /> */}
-
                 <Contact />
             </div>
+
         </Layout>
     )
 }

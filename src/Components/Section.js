@@ -7,7 +7,7 @@ const Section = ({ pageName }) => {
             {sectionContent.map((itms, i) => {
                 return (
                     <>
-                        <div className={`${pageName === `${itms.id}` ? 'active' : ''} col-12`} id={itms.id}
+                        <div className={`${pageName === `${itms.id}` ? 'active' : ''} col-12 section-${i}`} id={itms.id}
                         >
 
                             <section

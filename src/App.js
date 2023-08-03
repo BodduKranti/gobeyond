@@ -21,6 +21,7 @@ import Landing from './Pages/Landing'
 import Home from './Pages/Home'
 import Header from './Components/Header'
 import About from './Pages/About'
+import Test from './Pages/Test';
 
 
 
@@ -34,6 +35,7 @@ const App = () => {
                     <Route path='/' element={<Header />}>
                         <Route path='/home' element={<Home />} />
                         <Route path='/about' element={<About />} />
+                        <Route path='/test' element={<Test />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
