@@ -67,10 +67,11 @@
         transition: all 0.5s ease-in-out;
         height: 100vh;
         &:nth-child(1) {
-            display: block;
-            opacity: 1 !important;
-            visibility: visible !important;
-            z-index: 1 !important;
+            // display: block;
+            // opacity: 1 !important;
+            // visibility: visible !important;
+            // z-index: 1 !important;
+            display: none;
         }
         &:nth-child(2),
         &:nth-child(5),
@@ -85,10 +86,11 @@
             transform: translateX(-100%); //left ro right
         }
         &:nth-child(8) {
-            display: none;
+            // display: none;
+            transform: translateX(-100%);
         }
         &.active {
-            @for $i from 2 through 7 {
+            @for $i from 2 through 8 {
                 &:nth-child(#{$i}) {
                     transform: translateX(0%);
                 }
@@ -97,19 +99,10 @@
                 display: block;
                 height: 100vh;
             }
-            // &:nth-child(2) {
-            //     transform: translateX(0%);
-            // }
-            // &:nth-child(3) {
-            //     transform: translateY(0%);
-            // }
-            // &:nth-child(4) {
-            //     transform: translateX(0%);
-            // }
         }
     }
 
-    @for $i from 2 through 7 {
+    @for $i from 2 through 8 {
         & > .col-12:not(:nth-child(#{$i})) {
             opacity: 0;
             z-index: 1;

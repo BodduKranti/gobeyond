@@ -15,9 +15,9 @@ const Section = ({ pageName }) => {
                                 className={`${itms.bgColor} py-5 py-md-3 my-0 service h-100`}
                                 key={i}
                             >
-                                <div className='container'>
-                                    <div className='row'>
-                                        <div className='col-md-6  d-flex itmes-center'>
+                                <div className='container h-100'>
+                                    <div className='row h-100' >
+                                        <div className='col-md-6  d-flex itmes-center h-100'>
 
                                             <figure>
                                                 <img src={itms.img} className='img-fluid' alt='' />
@@ -25,7 +25,7 @@ const Section = ({ pageName }) => {
 
 
                                         </div>
-                                        <div className='col-md-6 d-flex itmes-center '>
+                                        <div className='col-md-6 d-flex itmes-center h-100'>
 
                                             <div className='main col-12'>
                                                 <h2 className='text-white fs-2'>{itms.title}</h2>

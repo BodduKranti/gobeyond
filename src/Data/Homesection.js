@@ -8,14 +8,6 @@ export const sectionContent = [
         btnName: "Know More",
         bgColor: 'bg-orange',
         txtColor: 'text-orange',
-        bgTrans: '',
-        imgTrans: [
-            {
-                letPoint: 50,
-                rightPoints: - 1
-            }
-        ],
-        textTrans: ''
     },
     {
         id: "mobile-app-developement",
@@ -25,15 +17,7 @@ export const sectionContent = [
         link: "/",
         btnName: "Know More",
         bgColor: 'bg-green',
-        txtColor: 'text-green',
-        bgTrans: '',
-        imgTrans: [
-            {
-                letPoint: 50,
-                rightPoints: - 1
-            }
-        ],
-        textTrans: ''
+        txtColor: 'text-green'
     },
     {
         id: "gamification",
@@ -43,20 +27,7 @@ export const sectionContent = [
         link: "/",
         btnName: "Know More",
         bgColor: 'bg-darkblue',
-        txtColor: 'text-darkblue',
-        bgTrans: [
-            {
-                letPoint: 50,
-                rightPoints: - 1
-            }
-        ],
-        imgTrans: [
-            {
-                letPoint: 50,
-                rightPoints: - 1
-            }
-        ],
-        textTrans: ''
+        txtColor: 'text-darkblue'
     },
     {
         id: "aws-azure",
@@ -66,15 +37,7 @@ export const sectionContent = [
         link: "/",
         btnName: "Know More",
         bgColor: 'bg-lightblue',
-        txtColor: 'text-lightblue',
-        bgTrans: '',
-        imgTrans: [
-            {
-                letPoint: 50,
-                rightPoints: - 1
-            }
-        ],
-        textTrans: ''
+        txtColor: 'text-lightblue'
     },
     {
         id: "devops",
@@ -84,15 +47,7 @@ export const sectionContent = [
         link: "/",
         btnName: "Learn More",
         bgColor: 'bg-bringle',
-        txtColor: 'text-bringle',
-        bgTrans: '',
-        imgTrans: [
-            {
-                letPoint: 50,
-                rightPoints: - 1
-            }
-        ],
-        textTrans: ''
+        txtColor: 'text-bringle'
     },
     {
         id: "cloud-services",
@@ -102,14 +57,16 @@ export const sectionContent = [
         link: "/",
         btnName: "Learn More",
         bgColor: 'bg-purple',
-        txtColor: 'text-purple',
-        bgTrans: '',
-        imgTrans: [
-            {
-                letPoint: 50,
-                rightPoints: - 1
-            }
-        ],
-        textTrans: ''
+        txtColor: 'text-purple'
+    },
+    {
+        id: "security-services",
+        title: "SECURITY SERVICES",
+        content: "With our comprehensive Security Services, your business will remain fortified against the verevolving cyber threats and safeguarded from potential risks.",
+        img: "/images/section/security.png",
+        link: "/",
+        btnName: "Learn More",
+        bgColor: 'bg-darkgreen',
+        txtColor: 'text-darkgreen'
     }
 ]

@@ -1,17 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 // import Scrollspy from 'react-scrollspy'
 const verticalLinkst = [
-    { href: 'homeVideo', title: "To Link" },
-    { href: 'web-developement', title: "Web Developement" },
-    { href: 'mobile-app-developement', title: "Mobile App Developement" },
-    { href: 'gamification', title: "Gamification" },
-    { href: 'aws-azure', title: "AWS AZURE" },
-    { href: 'devops', title: "devops" },
-    { href: 'cloud-services', title: "Cloud Services" }
+    { href: 'homeVideo', title: "To Link", bgColo: '' },
+    { href: 'web-developement', title: "Web Developement", bgColo: 'bg-orange' },
+    { href: 'mobile-app-developement', title: "Mobile App Developement", bgColo: 'bg-green' },
+    { href: 'gamification', title: "Gamification", bgColo: 'bg-darkblue' },
+    { href: 'aws-azure', title: "AWS AZURE", bgColo: 'bg-lightblue' },
+    { href: 'devops', title: "devops", bgColo: 'bg-bringle' },
+    { href: 'cloud-services', title: "Cloud Services", bgColo: 'bg-purple' },
+    { href: 'security-services', title: "SECURITY Services", bgColo: 'bg-purple' }
 ]
-const Homelinks = ({ setPageName }) => {
-    const [active, setActive] = useState('homeVideo');
+const Homelinks = ({ setPageName, setActive, active }) => {
+
     return (
         <>
             <div className='vertical-Links'>
@@ -20,13 +21,13 @@ const Homelinks = ({ setPageName }) => {
                     return (
                         <>
                             <li
-                                className={`${active === `${links.href}` ? 'current' : 'text-decoration-none'}  
+                                className={`${active.page === `${links.href}` ? 'current' : 'text-decoration-none'}  
                                 list-unstyled`}
                                 onClick={() => setPageName(links.href)}
                             >
                                 <AnchorLink
                                     key={i}
-                                    onClick={() => setActive(links.href)}
+                                    onClick={() => setActive({ page: links.href, bgColor: links.bgColo })}
                                     href={`#${links.href}`}>
                                     <span>{links.title}</span>
                                 </AnchorLink>

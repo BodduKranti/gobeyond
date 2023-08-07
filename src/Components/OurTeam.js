@@ -3,10 +3,18 @@ import React from 'react'
 const OurTeam = () => {
     return (
         <>
-            <div className="col-12 py-5 bg-skyblue">
+            <div className="col-12 py-5 bgPart">
                 <div className="container">
-                    <h2 className='text-center text-white fs-2'>What Our Team Say</h2>
-                    <p className='text-center text-white'>​ Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum p</p>
+                    <div className='row'>
+                        <div className="col-md-6"></div>
+                        <div className="col-md-6">
+                            <h3 className='text-skyblue fs-4'>Our Team</h3>
+                            <h2 className='text-darkgreen  fs-2'>We are an agency engaged in digital business.
+                            </h2>
+                            <p className='text-light'>​ The team is in a very good environment. you can see their profile in detail. they are professional people i their fields, they are not in doubt.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>
