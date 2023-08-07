@@ -35,24 +35,27 @@ const groupData = [
 const Group = () => {
     return (
         <>
-            <div className='row g-0 group'>
-                {groupData && groupData.map((data) => (
-                    <>
-                        <div className="col">
-                            <figure className='m-0'>
-                                <img src={data.img} className='img-fluid w-100 h-100' style={{ objectFit: 'cover' }} alt="" />
-                            </figure>
-                            <div className={`${data.bgclr} card p-2`}>
-                                <div className='section-card'>
-                                    <div className="card-title text-white">{data.title}</div>
-                                    <div className="card-content text-white">{data.content}</div>
+            <div className="col-12">
+                <div className='row g-0 group'>
+                    {groupData && groupData.map((data) => (
+                        <>
+                            <div className="col">
+                                <figure className='m-0'>
+                                    <img src={data.img} className='img-fluid w-100 h-100' style={{ objectFit: 'cover' }} alt="" />
+                                </figure>
+                                <div className={`${data.bgclr} card p-2`}>
+                                    <div className='section-card'>
+                                        <div className="card-title text-white">{data.title}</div>
+                                        <div className="card-content text-white">{data.content}</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </>
-                ))}
+                        </>
+                    ))}
 
+                </div>
             </div>
+
         </>
     )
 }

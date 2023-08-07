@@ -53,67 +53,125 @@
     }
 }
 
-.homesection {
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
+.homesection > [class*="section-"] {
     height: 100vh;
 }
-
-.homesection {
-    & > .col-12 {
-        position: absolute;
-        top: 0;
-        transition: all 0.5s ease-in-out;
-        height: 100vh;
-        &:nth-child(1) {
-            // display: block;
-            // opacity: 1 !important;
-            // visibility: visible !important;
-            // z-index: 1 !important;
-            display: none;
-        }
-        &:nth-child(2),
-        &:nth-child(5),
-        &:nth-child(7) {
-            transform: translateX(100%); //right to left
-        }
-        &:nth-child(3),
-        &:nth-child(6) {
-            transform: translateY(-100%); //top to bottom
-        }
-        &:nth-child(4) {
-            transform: translateX(-100%); //left ro right
-        }
-        &:nth-child(8) {
-            // display: none;
-            transform: translateX(-100%);
-        }
-        &.active {
-            @for $i from 2 through 8 {
-                &:nth-child(#{$i}) {
-                    transform: translateX(0%);
+.vertical-Links {
+    ul {
+        li {
+            &.darkLink {
+                a {
+                    &::before {
+                        background-color: #000;
+                    }
+                }
+                &.current {
+                    a {
+                        span {
+                            color: #000;
+                        }
+                    }
                 }
             }
-            &:nth-child(1) {
-                display: block;
-                height: 100vh;
-            }
+            // @for $i from 9 through 15 {
+            //     &:nth-child(#{$i}) {
+            //         & a {
+            //             &::before {
+            //                 background-color: #fff;
+            //             }
+            //             span {
+            //                 color: #fff;
+            //             }
+            //         }
+            //     }
+            //     &.current {
+            //         &:nth-child(#{$i}) {
+            //             & a {
+            //                 &::before {
+            //                     background-color: #000;
+            //                 }
+            //                 span {
+            //                     color: #000;
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
+}
 
-    @for $i from 2 through 8 {
-        & > .col-12:not(:nth-child(#{$i})) {
-            opacity: 0;
-            z-index: 1;
-            visibility: hidden;
-            // display: none;
-        }
-        & > .active.col-12:not(:nth-child(#{$i})) {
-            opacity: 1;
-            z-index: 2;
-            visibility: visible;
-            // display: block;
-        }
+// .homesection {
+//     position: relative;
+//     width: 100%;
+//     overflow-x: hidden;
+//     height: 100vh;
+// }
+
+// .homesection {
+//     & > .col-12 {
+//         position: absolute;
+//         top: 0;
+//         transition: all 0.5s ease-in-out;
+//         height: 100vh;
+//         &:nth-child(1) {
+//             // display: block;
+//             // opacity: 1 !important;
+//             // visibility: visible !important;
+//             // z-index: 1 !important;
+//             display: none;
+//         }
+//         &:nth-child(2),
+//         &:nth-child(5),
+//         &:nth-child(7) {
+//             transform: translateX(100%); //right to left
+//         }
+//         &:nth-child(3),
+//         &:nth-child(6) {
+//             transform: translateY(-100%); //top to bottom
+//         }
+//         &:nth-child(4),
+//         &:nth-child(9) {
+//             transform: translateX(-100%); //left ro right
+//         }
+//         &:nth-child(8) {
+//             // display: none;
+//             transform: translateX(-100%);
+//         }
+//         &.active {
+//             @for $i from 2 through 9 {
+//                 &:nth-child(#{$i}) {
+//                     transform: translateX(0%);
+//                 }
+//             }
+//             &:nth-child(1) {
+//                 display: block;
+//                 height: 100vh;
+//             }
+//         }
+//     }
+
+//     @for $i from 2 through 9 {
+//         & > .col-12:not(:nth-child(#{$i})) {
+//             opacity: 0;
+//             z-index: 1;
+//             visibility: hidden;
+//             // display: none;
+//         }
+//         & > .active.col-12:not(:nth-child(#{$i})) {
+//             opacity: 1;
+//             z-index: 2;
+//             visibility: visible;
+//             // display: block;
+//         }
+//     }
+// }
+
+@media (max-width: 767px) {
+    .homesection > [class*="section-"] .h-100 {
+        height: auto !important;
+    }
+    .homesection > [class*="section-"] {
+        height: 100%;
     }
 }

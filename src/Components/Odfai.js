@@ -13,7 +13,7 @@ const odfaiData = [
     {
         title: 'Health Care',
         content1: 'The transactions done with a bank and the services it offers to its customers is collectively known as banking.Banking can be done online, offline, or both ways.A bank is a financial institution licensed to receive deposits and offer loans.Banks also provide financial services, such as safe deposit boxes, currency exchange, and wealth management.',
-        content2: 'The transactions done with a bank and the services it offers to its customers is collectively known as banking.Banking can be done online, offline, or both ways.A bank is a financial institution licensed to receive deposits and offer loans.Banks also provide financial services, such as safe deposit boxes, currency exchange, and wealth management.',
+        content2: '',
         btn: 'Learn More',
         link: '',
         image: './images/demo-img.jpg',
@@ -30,7 +30,7 @@ const odfaiData = [
     },
     {
         title: 'Pharma',
-        content1: 'The transactions done with a bank and the services it offers to its customers is collectively known as banking.Banking can be done online, offline, or both ways.A bank is a financial institution licensed to receive deposits and offer loans.Banks also provide financial services, such as safe deposit boxes, currency exchange, and wealth management.',
+        content1: '',
         content2: 'The transactions done with a bank and the services it offers to its customers is collectively known as banking.Banking can be done online, offline, or both ways.A bank is a financial institution licensed to receive deposits and offer loans.Banks also provide financial services, such as safe deposit boxes, currency exchange, and wealth management.',
         btn: 'Learn More',
         link: '',
@@ -46,7 +46,7 @@ const Odfai = () => {
 
     return (
         <>
-            <div className='mainSection dotsBg py-5'>
+            <div className='col-12 mainSection dotsBg py-5'>
                 <div className='col-12 py-5 bgPart my-3'>
                     <div className='container'>
                         <h2 className='text-gray fs-2 text-center'>Our Diverse Footprints Across Industries</h2>

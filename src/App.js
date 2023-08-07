@@ -9,7 +9,6 @@ import './assests/Style/index.css'
 // npm i react-scrollspy
 // npm i react-scroll-parallax
 
-
 import './assests/Style/style.scss'
 
 import "slick-carousel/slick/slick.css";

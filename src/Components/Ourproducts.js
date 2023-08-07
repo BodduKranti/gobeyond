@@ -39,7 +39,7 @@ const Ourproducts = () => {
     };
     return (
         <>
-            <div className='col-12 py-5 ourproducts bgPart'>
+            <div className='col-12 py-5 ourproducts bgPart vh-100' id='our-products'>
                 <div className="container">
                     <h2 className='text-grayTextcolor fs-2 text-darkgreen text-center'>Our Products</h2>
 

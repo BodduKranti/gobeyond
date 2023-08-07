@@ -10,6 +10,9 @@ import Ourproducts from '../Components/Ourproducts'
 import Odfai from '../Components/Odfai'
 import OurTeam from '../Components/OurTeam'
 import Group from '../Components/Group'
+import OurClients from '../Components/OurClients'
+
+
 const Home = () => {
     const [pageName, setPageName] = useState('homeVideo');
     const [active, setActive] = useState({
@@ -17,6 +20,9 @@ const Home = () => {
         bgColor: ''
     });
     console.log(active)
+
+
+
     return (
         <Layout
             title={"- Home"}
@@ -38,16 +44,23 @@ const Home = () => {
                 {/* <OurClients />
 
                  */}
+
+                <OurClients />
+
+                <Ourproducts />
+
+                <Odfai />
+
+                <OurTeam />
+
+                <Group />
+
                 <Contact />
+
             </div>
 
-            <Ourproducts />
 
-            <Odfai />
 
-            <OurTeam />
-
-            <Group />
         </Layout>
     )
 }
