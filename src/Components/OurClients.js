@@ -7,7 +7,7 @@ const OurClients = () => {
         { img: '/images/brand/brand-3.png', boxclr: '#40916c' },
         { img: '/images/brand/brand-4.png', boxclr: '#2ec4b6' },
         { img: '/images/brand/brand-5.png', boxclr: '#1f376c' },
-        { img: '/images/brand/brand-6.png', boxclr: '#5b1cb0' }
+        // { img: '/images/brand/brand-6.png', boxclr: '#5b1cb0' }
     ]
 
     const settings = {
@@ -50,7 +50,11 @@ const OurClients = () => {
         <>
             <div className='col-12 pt-5 vh-100' id='our-clients'>
                 <div className='container text-center'>
-                    <h2 className='text-grayTextcolor fs-2'>Our Clients</h2>
+                    <h2 className='text-grayTextcolor fs-2 headingeffect text-center'>
+                        <span>Our Clients</span>
+                        <p className='col-12 mb-0'>Take a Look at our clients</p>
+                        <small className='text-orange col-12 fs-6'>We did a great job with these companies. You can be next to work with!</small>
+                    </h2>
                 </div>
                 <div className="container">
                     <Slider {...settings}>
@@ -58,17 +62,15 @@ const OurClients = () => {
                             return (
                                 <>
                                     <div>
-                                        <div className='col-12 p-3'>
-                                            <div className='col-12' style={{
+                                        <div className='col-12 py-3 px-2'>
+                                            <div className='col-12 box-color' style={{
                                                 height: '120px',
-                                                boxShadow: '0 0 10px rgba(0,0,0,.3)',
                                                 backgroundColor: `${itms.boxclr}`
                                             }}></div>
                                         </div>
-                                        <div className='col-12 p-3 '>
-                                            <div className='col-12 d-flex itmes-center justify-center' style={{
+                                        <div className='col-12 py-3 px-2'>
+                                            <div className='col-12 d-flex itmes-center box-logo justify-center' style={{
                                                 height: '120px',
-                                                boxShadow: '0 0 10px rgba(0,0,0,.3)'
                                             }}>
                                                 <img src={itms.img} alt={itms.img} className='img-fluid' />
 
@@ -80,6 +82,10 @@ const OurClients = () => {
                             )
                         })}
                     </Slider>
+
+                    <div className='col-12 text-center mt-3'>
+                        <button className='btn btn-primary py-1 px-4 fs-4'>Try us out</button>
+                    </div>
                 </div>
             </div>
 

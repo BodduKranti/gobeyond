@@ -9,8 +9,9 @@ import Homelinks from '../Components/Homelinks'
 import Ourproducts from '../Components/Ourproducts'
 import Odfai from '../Components/Odfai'
 import OurTeam from '../Components/OurTeam'
-import Group from '../Components/Group'
 import OurClients from '../Components/OurClients'
+import BTT from '../Components/BTT'
+import Ourculture from '../Components/Ourculture'
 
 
 const Home = () => {
@@ -44,16 +45,18 @@ const Home = () => {
                 {/* <OurClients />
 
                  */}
+                <Ourproducts />
 
                 <OurClients />
 
-                <Ourproducts />
 
                 <Odfai />
 
                 <OurTeam />
 
-                <Group />
+                <BTT />
+
+                <Ourculture />
 
                 <Contact />
 
